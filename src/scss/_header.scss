@@ -1,0 +1,56 @@
+.header {
+  .navbar-logo-img {
+    @media (max-width: map-get($breakpoints,"xl")) {
+      height: 70px;
+    }
+    @media (max-width: map-get($breakpoints,"sm")) {
+      height: 60px;
+      width: 140px;
+    }
+    @media (max-width: 400px) {
+      height: 35px;
+      width: 100px;
+    }
+  }
+
+  .header-left-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media (max-width: 500px) {
+      height: 90px;
+    }
+  }
+  .header-right-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    @media (max-width: map-get($breakpoints,"xl")) {
+      height: 270px;
+    }
+    @media (max-width: map-get($breakpoints,"sm")) {
+      height: 230px;
+    }
+    @media (max-width: 500px) {
+      height: 220px;
+    }
+  }
+
+  .navbar-main {
+    padding: 00px 115px;
+    @media (max-width: 500px) {
+      padding: 00px 60px;
+    }
+    .nav-item {
+      padding-left: 35px;
+      .nav-item-individual {
+        font-size: 18px;
+        line-height: 21px;
+        padding-left: 25px;
+        font-weight: map-get($font-weight, "regular");
+        color: black;
+      }
+    }
+  }
+}

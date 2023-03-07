@@ -1,0 +1,84 @@
+.aboutUs-container {
+  .row-1 {
+    @media (max-width: 400px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .aboutus-img {
+    height: 350px;
+    margin-top: 100px;
+
+    @media (max-width: (map-get($breakpoints,"md"))) {
+      height: 300px;
+    }
+    @media (max-width: (map-get($breakpoints,"lg"))) {
+      margin-top: 20px !important;
+    }
+    @media (max-width: (map-get($breakpoints,"sm"))) {
+      height: 250px;
+    }
+    @media (max-width: 400px) {
+      height: 180px;
+      margin-top: -20px !important;
+    }
+  }
+  .aboutus-text-heading {
+    font-family: "Rubik", sans-serif;
+    font-size: 48px;
+    font-weight: map-get($map: $font-weight, $key: "regular");
+    :first-child {
+      :first-child {
+        @media (max-width: (map-get($breakpoints,"xl"))) {
+          font-size: 45px;
+        }
+
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+          font-size: 40px;
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          font-size: 35px;
+        }
+        @media (max-width: (map-get($breakpoints,"sm"))) {
+          font-size: 30px;
+        }
+      }
+      :nth-child(2) {
+        :first-child {
+          @media (max-width: (map-get($breakpoints,"xl"))) {
+            width: 145px !important;
+          }
+
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            width: 135px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            width: 110px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            width: 100px !important;
+          }
+        }
+      }
+    }
+  }
+  .aboutus-text-content {
+    font-weight: map-get($map: $font-weight, $key: "normal");
+
+    @include font-size-aboutus-content;
+  }
+  .engagement-communication {
+    .ec-text-heading {
+      @include font-size-aboutus-engagement;
+      font-weight: map-get($map: $font-weight, $key: "regular");
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    .ex-text {
+      @include font-size-aboutus-content;
+    }
+  }
+}

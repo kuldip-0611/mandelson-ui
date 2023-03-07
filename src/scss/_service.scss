@@ -1,0 +1,101 @@
+.services-container {
+  .container {
+    @media (max-width: map-get($breakpoints,"lg")) {
+      .row:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .row:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .services-text {
+      :first-child {
+        :first-child {
+          @media (max-width: (map-get($breakpoints,"xl"))) {
+            font-size: 45px;
+          }
+
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            font-size: 40px;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            font-size: 35px;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            font-size: 30px;
+          }
+        }
+        :nth-child(2) {
+          :first-child {
+            @media (max-width: (map-get($breakpoints,"xl"))) {
+              width: 55px !important;
+            }
+
+            @media (max-width: (map-get($breakpoints,"lg"))) {
+              width: 50px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"md"))) {
+              width: 40px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"sm"))) {
+              width: 35px !important;
+            }
+          }
+          :nth-child(2) {
+            @media (max-width: (map-get($breakpoints,"lg"))) {
+              width: 138px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"md"))) {
+              width: 115px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"sm"))) {
+              width: 110px !important;
+            }
+          }
+        }
+      }
+      font-family: "Rubik";
+      font-weight: map-get($map: $font-weight, $key: "regular");
+    }
+    .row {
+      .col {
+        .service-text-head {
+          @include font-size-services;
+
+          font-weight: map-get($map: $font-weight, $key: "regular");
+          @media (max-width: map-get($breakpoints,"lg")) {
+            text-align: left !important;
+          }
+          @media (max-width: map-get($breakpoints,"md")) {
+            text-align: center !important;
+          }
+        }
+        .service-text-content {
+          @include font-size-services-sml-text;
+          font-weight: map-get($map: $font-weight, $key: "normal");
+
+          @media (max-width: map-get($breakpoints,"lg")) {
+            text-align: left !important;
+          }
+          @media (max-width: map-get($breakpoints,"md")) {
+            text-align: center !important;
+          }
+        }
+      }
+      .services-img {
+        @media (max-width: map-get($breakpoints,"md")) {
+          width: 400px;
+        }
+        @media (max-width: map-get($breakpoints,"lg")) {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
