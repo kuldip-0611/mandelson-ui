@@ -1,0 +1,96 @@
+.container {
+  .team-heading {
+    margin-bottom: 30px;
+    font-family: "Rubik", sans-serif;
+    font-weight: map-get($map: $font-weight, $key: "regular");
+    margin-top: 50px;
+    :first-child {
+      :first-child {
+        @media (max-width: (map-get($breakpoints,"xl"))) {
+          font-size: 45px;
+        }
+
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+          font-size: 40px;
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          font-size: 35px;
+        }
+        @media (max-width: (map-get($breakpoints,"sm"))) {
+          font-size: 30px;
+        }
+      }
+      :nth-child(2) {
+        :first-child {
+          @media (max-width: (map-get($breakpoints,"xl"))) {
+            width: 100px !important;
+          }
+
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            width: 90px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            width: 70px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            width: 66px !important;
+          }
+        }
+        :nth-child(2) {
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            width: 114px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            width: 100px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            width: 90px !important;
+          }
+        }
+      }
+    }
+  }
+  .row {
+    .col {
+     
+    }
+  }
+}
+ .team-img {
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+          width: 250px !important;
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          width: 230px !important;
+        }
+       
+        @media (max-width:400px) {
+           width: 200px !important;
+            
+        }
+      }
+
+      .team-name {
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: map-get($map: $font-weight, $key: "normal");
+        margin-top: 40px;
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+         font-size: 20px;
+         
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          font-size: 16px;
+          margin-top: 20px !important;
+          
+        }
+        @media (max-width: (map-get($breakpoints,"sm"))) {
+         font-size: 12px;
+        
+        }
+        @media (max-width:400px) {
+            font-size: 10px;
+            margin-top: 15px !important;
+            
+        }
+      }

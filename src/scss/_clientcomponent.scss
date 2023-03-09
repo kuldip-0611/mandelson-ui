@@ -1,0 +1,66 @@
+.client-heading {
+  font-weight: map-get($map: $font-weight, $key: "regular");
+  font-family: "Rubik", sans-serif !important;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  :first-child {
+    :first-child {
+      @media (max-width: (map-get($breakpoints,"xl"))) {
+        font-size: 45px;
+      }
+
+      @media (max-width: (map-get($breakpoints,"lg"))) {
+        font-size: 40px;
+      }
+      @media (max-width: (map-get($breakpoints,"md"))) {
+        font-size: 35px;
+      }
+      @media (max-width: (map-get($breakpoints,"sm"))) {
+        font-size: 30px;
+      }
+    }
+    :nth-child(2) {
+      :first-child {
+        @media (max-width: (map-get($breakpoints,"xl"))) {
+          width: 100px !important;
+        }
+
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+          width: 82px !important;
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          width: 70px !important;
+        }
+        @media (max-width: (map-get($breakpoints,"sm"))) {
+          width: 66px !important;
+        }
+      }
+      :nth-child(2) {
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+          width: 164px !important;
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          width: 140px !important;
+        }
+        @media (max-width: (map-get($breakpoints,"sm"))) {
+          width: 125px !important;
+        }
+      }
+    }
+  }
+}
+.client-images {
+  filter: brightness(0);
+}
+.client-images:hover {
+  filter: brightness(1);
+}
+
+.row-1 {
+  @media (max-width: map-get($breakpoints,xl)) {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

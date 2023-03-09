@@ -1,0 +1,110 @@
+
+.project-title {
+    margin-bottom: 27px;
+    margin-top: 100px;
+    font-weight: map-get($map: $font-weight, $key: "regular");
+    font-family: "Rubik", sans-serif !important;
+    
+    
+    :first-child {
+      :first-child {
+        @media (max-width: (map-get($breakpoints,"xl"))) {
+          font-size: 45px;
+        }
+  
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+          font-size: 40px;
+        }
+        @media (max-width: (map-get($breakpoints,"md"))) {
+          font-size: 35px;
+        }
+        @media (max-width: (map-get($breakpoints,"sm"))) {
+          font-size: 30px;
+        }
+      }
+      :nth-child(2) {
+        :first-child {
+          @media (max-width: (map-get($breakpoints,"xl"))) {
+            width: 100px !important;
+          }
+  
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            width: 82px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            width: 70px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            width: 66px !important;
+          }
+        }
+        :nth-child(2) {
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            width: 200px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            width: 180px !important;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            width: 155px !important;
+          }
+        }
+      }
+    }
+  }
+  
+  .project-1 {
+    @media (max-width: map-get($breakpoints,md)) {
+      width: 430px;
+    }
+    @media (max-width: 500px) {
+      width: 360px;
+    }
+    @media (max-width: 400px) {
+      width: 250px;
+    }
+  
+    
+  }
+  .project2-3 {
+    margin-left: -170px;
+    
+  
+    @media (max-width: map-get($breakpoints,xxl)) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+  
+    .project-2 {
+      
+      @media (max-width: map-get($breakpoints,md)) {
+        width: 430px ;
+      }
+      @media (max-width: 500px) {
+        width: 360px;
+      }
+      @media (max-width: 400px) {
+        width: 250px;
+      }
+    }
+    .project-3 {
+      margin-top: 24px;
+      @media (max-width: map-get($breakpoints,xxl)) {
+       margin-top: 0px;
+      }
+      @media (max-width: map-get($breakpoints,md)) {
+        width: 430px ;
+      }
+      @media (max-width: 500px) {
+        width: 360px;
+      }
+      @media (max-width: 400px) {
+        width: 250px;
+      }
+    }
+  }
+  

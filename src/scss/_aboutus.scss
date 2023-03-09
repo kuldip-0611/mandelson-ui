@@ -38,6 +38,7 @@
 
         @media (max-width: (map-get($breakpoints,"lg"))) {
           font-size: 40px;
+          text-align: center;
         }
         @media (max-width: (map-get($breakpoints,"md"))) {
           font-size: 35px;
@@ -47,6 +48,11 @@
         }
       }
       :nth-child(2) {
+        @media (max-width: (map-get($breakpoints,"lg"))) {
+         justify-content: center !important;
+          
+        }
+        
         :first-child {
           @media (max-width: (map-get($breakpoints,"xl"))) {
             width: 145px !important;
@@ -54,6 +60,7 @@
 
           @media (max-width: (map-get($breakpoints,"lg"))) {
             width: 135px !important;
+            
           }
           @media (max-width: (map-get($breakpoints,"md"))) {
             width: 110px !important;

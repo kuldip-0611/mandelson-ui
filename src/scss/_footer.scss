@@ -1,0 +1,32 @@
+.footer-container{
+    background-color: #BFDBFF;
+    @media (max-width:400px) {
+        padding: 20px;
+        
+    }
+    .row{
+        padding: 30px;
+
+        @media (max-width:map-get($breakpoints,sm)){
+        padding: 10px;         
+        }
+        @media (max-width : 400px){
+            padding: 00px !important;
+        }
+    }
+    
+    &-h1{
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: map-get($map:$font-weight, $key: 'regular_1' );
+    }
+    &-h2{
+        font-size: 14px;
+        
+    }
+}
+
+.foo-text{
+    font-family: 'Rubik', sans-serif;
+    font-weight: map-get($map: $font-weight, $key: 'normal' );
+}

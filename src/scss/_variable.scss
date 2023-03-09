@@ -60,8 +60,10 @@ $breakpoints: (
 }
 
 @mixin font-size-services-sml-text {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Rubik";
+  line-height: 23px;
+ 
 
   @media (max-width: map-get($breakpoints,lg)) {
     font-size: 14px;
