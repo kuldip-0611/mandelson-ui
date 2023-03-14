@@ -54,6 +54,7 @@
   }
   
   .project-1 {
+    width:100%;
     @media (max-width: map-get($breakpoints,md)) {
       width: 430px;
     }
@@ -67,7 +68,7 @@
     
   }
   .project2-3 {
-    margin-left: -170px;
+    
     
   
     @media (max-width: map-get($breakpoints,xxl)) {
@@ -76,12 +77,13 @@
       align-items: center;
       flex-direction: column;
       margin-left: 0px;
-      margin-top: 20px;
     }
   
     .project-2 {
+      width:100%;
       
       @media (max-width: map-get($breakpoints,md)) {
+        margin-top:20px;
         width: 430px ;
       }
       @media (max-width: 500px) {
@@ -93,8 +95,9 @@
     }
     .project-3 {
       margin-top: 24px;
+      width:100%;
       @media (max-width: map-get($breakpoints,xxl)) {
-       margin-top: 0px;
+       margin-top: 20px;
       }
       @media (max-width: map-get($breakpoints,md)) {
         width: 430px ;

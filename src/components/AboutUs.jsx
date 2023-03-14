@@ -39,7 +39,7 @@ const AboutUs = () => {
             </p>
             <Row>
               <Col>
-                <div className="engagement-communication text-start mt-3">
+                <div className="engagement-communication text-start ">
                   <img src={engagement} />
                   <p className="text-start ec-text-heading">ENGAGEMENT</p>
                   <p className="text-start ex-text">
@@ -49,7 +49,7 @@ const AboutUs = () => {
                 </div>
               </Col>
               <Col>
-                <div className="engagement-communication text-start mt-3">
+                <div className="engagement-communication text-start ">
                   <img src={communication} />
                   <p className="ec-text-heading">COMMUNICATION</p>
                   <p className="ex-text">

@@ -74,7 +74,7 @@
         font-family: "Rubik", sans-serif;
         font-size: 24px;
         font-weight: map-get($map: $font-weight, $key: "normal");
-        margin-top: 40px;
+        margin-top: 40px !important;
         @media (max-width: (map-get($breakpoints,"lg"))) {
          font-size: 20px;
          

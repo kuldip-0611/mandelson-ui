@@ -13,6 +13,12 @@
         @media (max-width : 400px){
             padding: 00px !important;
         }
+        ul{
+            @media (max-width:map-get($breakpoints,md)){
+                text-align:center !important;   
+                padding-left:0px !important; 
+             }
+        }
     }
     
     &-h1{

@@ -74,15 +74,17 @@
   }
   .aboutus-text-content {
     font-weight: map-get($map: $font-weight, $key: "normal");
-
+   
+    
     @include font-size-aboutus-content;
   }
   .engagement-communication {
+    padding-top:40px;
     .ec-text-heading {
       @include font-size-aboutus-engagement;
       font-weight: map-get($map: $font-weight, $key: "regular");
-      margin-top: 25px;
-      margin-bottom: 15px;
+      margin-top: 25px !important;
+      margin-bottom: 15px !important;
     }
     .ex-text {
       @include font-size-aboutus-content;

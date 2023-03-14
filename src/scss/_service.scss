@@ -64,6 +64,7 @@
       font-weight: map-get($map: $font-weight, $key: "regular");
     }
     .row {
+      --bs-gutter-x:8rem !important;
       .col {
         .service-text-head {
           @include font-size-services;

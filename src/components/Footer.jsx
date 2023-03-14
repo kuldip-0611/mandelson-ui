@@ -11,7 +11,7 @@ const Footer = () => {
       <Container className="footer-container mt-4">
         <Row>
           <Col xl='3' lg='6'  md='6' sm='12'>
-          <ul type="none">
+          <ul type="none" className='text-start'>
               <li className="footer-container-h1">social</li>
               <li className="footer-container-h2 pt-2"><img src={facebook} className='me-2' />facebook</li>
               <li className="footer-container-h2 pt-2"><img src={linkdein} className='me-2' />LinkedIn</li>
@@ -20,7 +20,7 @@ const Footer = () => {
 
           </Col>
           <Col  xl='3' lg='6'  md='6' sm='12'  >
-            <ul type="none">
+            <ul type="none" className='text-start'>
               <li className='footer-container-h1'>Explore</li>
               <li className="footer-container-h2 pt-2">Service</li>
               <li className="footer-container-h2 pt-2">Team</li>
@@ -28,7 +28,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col  xl='3' lg='6'  md='6' sm='12' >
-            <ul type="none">
+            <ul type="none" className='text-start'>
               <li className='footer-container-h1'>Contact</li>
               <li className="footer-container-h2 pt-2">Lorem Ipsum dummy address</li>
               <li className="footer-container-h2 pt-2">used for display</li>
@@ -36,7 +36,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col  xl='3' lg='6' md='6' sm='12'>
-          <ul type="none">
+          <ul type="none" className='text-start'>
               <li className='footer-container-h1'>Email</li>
               <li className="footer-container-h2 pt-2">mendlesoncommunication@email.com</li>
              

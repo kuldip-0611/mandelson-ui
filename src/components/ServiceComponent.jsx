@@ -35,10 +35,10 @@ const ServiceComponent = () => {
         </div>
         {data.map((item, index) => {
           return (
-            <Row className="mt-5">
+            <Row className="mt-5 gx-5">
               <Col
                 key={item.index}
-                className={`${item.order ? "order-1" : "order-2"} mt-5`}
+                className={`${item.order ? "order-1" : "order-2"} mt-5 `}
               >
                 <div>
                   <p

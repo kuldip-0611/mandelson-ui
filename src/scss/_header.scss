@@ -47,7 +47,7 @@
       .nav-item-individual {
         font-size: 18px;
         line-height: 21px;
-        padding-left: 25px;
+       
         font-weight: map-get($font-weight, "regular");
         color: black;
         @media (max-width: map-get($breakpoints,"lg")) {
